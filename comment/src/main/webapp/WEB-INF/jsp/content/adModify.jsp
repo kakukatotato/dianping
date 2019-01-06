@@ -32,9 +32,9 @@
 							</td>
 							<td align="right" width="10%">上传图片：</td>
 							<td width="30%">
-								<a href="${modifyObj.img}">查看图片</a>
-								<input type="hidden" name="img" value="${modifyObj.img}"/>
-								<input id="imgFile" name="imgFile" class="allInput" style="width:100%;" type="file"/>
+								<a href="${modifyObj.imgFileName}">查看图片</a>
+								<input type="hidden" name="imgFileName" value="${modifyObj.imgFileName}"/>
+								<input id="imgFile" name="newImgFile" class="allInput" style="width:100%;" type="file"/>
 							</td>
 						</tr>
 						<tr>

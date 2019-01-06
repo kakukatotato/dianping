@@ -17,4 +17,25 @@ import java.util.List;
 
 @Service
 public class AdServiceImpl implements AdService {
+
+    @Autowired
+    private  AdDao adDao;
+
+    @Override
+    public List<Ad> getList() {
+        List<Ad> adList = adDao.selectAdList();
+        return adList;
+    }
+
+    @Override
+    public Ad getModifyAdById(String id) {
+        return adDao.selectOneById(id);
+    }
+
+    @Override
+    public void modifyAd(Ad ad) {
+        adDao.updateAd();
+    }
+
+
 }

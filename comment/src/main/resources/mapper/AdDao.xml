@@ -4,4 +4,11 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.imooc.dao.AdDao">
 
+    <select id="selectAdList" resultType="org.imooc.bean.Ad">
+        select * from ad;
+    </select>
+
+    <select id="selectOneById" resultType="Ad">
+        select * from ad where id = #{id};
+    </select>
 </mapper>
